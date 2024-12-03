@@ -1,0 +1,211 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  border-color: var(--ig-gray-400);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  padding: 24px;
+  width: 900px;
+  min-width: 50px;
+  min-height: 620px;
+  max-width: 900px;
+  flex-shrink: 0;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+}
+.group_4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.conditions_group-2 {
+  border-color: #9C27B0;
+  border-width: 0px 0px 0px 2px;
+  border-style: solid;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  margin: 0 0 8px;
+  padding: 0 0 0 4px;
+}
+.group_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  padding: 0 0 0 16px;
+}
+.conditions_group {
+  border-color: #068E6B;
+  border-width: 0px 0px 0px 2px;
+  border-style: solid;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  margin: 0 0 8px;
+  padding: 0 0 0 4px;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.group_7 {
+  border-color: var(--ig-gray-500);
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 4px 24px;
+  width: max-content;
+  min-width: 50px;
+  min-height: 32px;
+}
+.group_8 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.group_9 {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 8px 0 0;
+  min-width: 50px;
+}
+.group_10 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.h6 {
+  margin: 0 0 8px;
+  height: max-content;
+  min-width: min-content;
+}
+.text {
+  color: var(--ig-gray-700);
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: #9C27B0;
+}
+.icon_1 {
+  color: #068E6B;
+}
+.chip {
+  --ig-size: var(--ig-size-large);
+  width: max-content;
+  height: max-content;
+}
+.icon_2 {
+  --size: 18px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: var(--ig-gray-500);
+}
+.icon_3 {
+  --size: 18px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.text_1 {
+  color: var(--ig-gray-600);
+  height: max-content;
+  min-width: min-content;
+}
+.select {
+  height: max-content;
+}
+.button {
+  --igx-button-foreground: #9C27B0;
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  min-width: min-content;
+  align-self: start;
+}
+.button_1 {
+  --igx-button-foreground: #068E6B;
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  min-width: min-content;
+  align-self: start;
+}
+.dropdown {
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: max-content;
+  min-width: min-content;
+}
+.button_2 {
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  flex-shrink: 0;
+}
+.button_3 {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}

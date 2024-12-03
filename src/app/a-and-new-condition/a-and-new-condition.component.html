@@ -1,0 +1,105 @@
+<div class="column-layout group">
+  <h6 class="h6">
+    Edit Query
+  </h6>
+  <div class="column-layout group_1">
+    <div class="row-layout group_2">
+      <div class="column-layout group_3">
+        <p class="ig-typography__body-2 text">
+          From
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Compounds
+          </igx-select-item>
+        </igx-select>
+      </div>
+      <div class="column-layout group_3">
+        <p class="ig-typography__body-2 text">
+          Select
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Id, Structure, Date
+          </igx-select-item>
+        </igx-select>
+      </div>
+    </div>
+    <div class="column-layout group_4">
+      <p class="ig-typography__body-2 text">
+        Where
+      </p>
+      <div class="column-layout group_5">
+        <div class="column-layout conditions">
+          <div class="column-layout conditions_group">
+            <button igxButton="flat" type="button" igxRipple class="button">
+              <span>And</span>
+              <igx-icon class="icon">
+                keyboard_arrow_down
+              </igx-icon>
+            </button>
+            <div class="column-layout group_6">
+              <div class="row-layout group_7">
+                <igx-chip class="chip">
+                  <igx-prefix>
+                    <igx-icon class="icon_1">
+                      drag_indicator
+                    </igx-icon>
+                  </igx-prefix>
+                  <igx-suffix>
+                    <igx-icon class="icon_2">
+                      remove_circle
+                    </igx-icon>
+                  </igx-suffix>
+                  Structure contains "value"
+                </igx-chip>
+              </div>
+              <div class="row-layout group_8">
+                <div class="row-layout group_4">
+                  <igx-select type="box" placeholder="Column" class="user-input">
+                    <igx-select-item value="1">
+                      Id
+                    </igx-select-item>
+                  </igx-select>
+                  <igx-select type="box" placeholder="equals" class="select_2">
+                    <igx-select-item value="1">
+                      in
+                    </igx-select-item>
+                  </igx-select>
+                  <igx-input-group type="box" class="user-input">
+                    <input type="text" placeholder="value" igxInput [(ngModel)]="value1" />
+                  </igx-input-group>
+                </div>
+                <div class="row-layout group_9">
+                  <button igxButton="outlined" type="button" igxRipple routerLink="/a-and-b" class="button_1">
+                    <igx-icon>
+                      check
+                    </igx-icon>
+                  </button>
+                  <button igxButton="outlined" type="button" igxRipple routerLink="/a" class="button_1">
+                    <igx-icon>
+                      close
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout group_10">
+    <button igxButton="flat" type="button" igxRipple class="button_2">
+      Delete all
+    </button>
+    <div class="row-layout group_5">
+      <button igxButton="outlined" type="button" igxRipple class="button_2">
+        Cancel
+      </button>
+      <button igxButton="contained" type="button" igxRipple class="button_2">
+        Apply
+      </button>
+    </div>
+  </div>
+</div>

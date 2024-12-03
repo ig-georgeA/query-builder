@@ -1,0 +1,241 @@
+<div class="column-layout group">
+  <h6 class="h6">
+    Edit Query
+  </h6>
+  <div class="column-layout group_1">
+    <div class="row-layout group_2">
+      <div class="column-layout group_3">
+        <p class="ig-typography__body-2 text">
+          From
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Compounds
+          </igx-select-item>
+        </igx-select>
+      </div>
+      <div class="column-layout group_3">
+        <p class="ig-typography__body-2 text">
+          Select
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Id, Structure, Date
+          </igx-select-item>
+        </igx-select>
+      </div>
+    </div>
+    <div class="column-layout group_4">
+      <p class="ig-typography__body-2 text">
+        Where
+      </p>
+      <div class="column-layout group_5">
+        <div class="column-layout conditions_group-4">
+          <button igxButton="flat" type="button" igxRipple class="button">
+            <span>And</span>
+            <igx-icon class="icon">
+              keyboard_arrow_down
+            </igx-icon>
+          </button>
+          <div class="column-layout group_6">
+            <div class="row-layout group_7">
+              <div class="row-layout group_8">
+                <igx-select type="border" [(ngModel)]="value" class="select_1">
+                  <igx-select-item value="1">
+                    Id
+                  </igx-select-item>
+                </igx-select>
+                <igx-select type="border" [(ngModel)]="value" class="select_1">
+                  <igx-select-item value="1">
+                    in
+                  </igx-select-item>
+                  <igx-select-item value="1">
+                    greater than or equal to
+                  </igx-select-item>
+                </igx-select>
+                <igx-input-group type="border" class="input">
+                  <input type="text" placeholder="Sub-query results" disabled="true" igxInput />
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_9">
+                <button igxButton="outlined" type="button" igxRipple routerLink="/subquery-collapsed" class="button_1">
+                  <igx-icon>
+                    check
+                  </igx-icon>
+                </button>
+                <button igxButton="outlined" type="button" igxRipple class="button_1">
+                  <igx-icon>
+                    close
+                  </igx-icon>
+                </button>
+              </div>
+            </div>
+            <div class="column-layout group_10">
+              <div class="row-layout group_2">
+                <div class="column-layout group_3">
+                  <p class="ig-typography__body-2 text">
+                    From
+                  </p>
+                  <igx-select type="box" [(ngModel)]="value" class="select">
+                    <igx-select-item value="1">
+                      Assays
+                    </igx-select-item>
+                  </igx-select>
+                </div>
+                <div class="column-layout group_3">
+                  <p class="ig-typography__body-2 text">
+                    Select
+                  </p>
+                  <igx-select type="box" [(ngModel)]="value" class="select">
+                    <igx-select-item value="1">
+                      compoundID
+                    </igx-select-item>
+                  </igx-select>
+                </div>
+              </div>
+              <div class="column-layout group_5">
+                <p class="ig-typography__body-2 text_1">
+                  Where
+                </p>
+                <div class="column-layout conditions_group-4">
+                  <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown" class="button_2">
+                    <span>And</span>
+                    <igx-icon class="icon">
+                      keyboard_arrow_down
+                    </igx-icon>
+                  </button>
+                  <div class="column-layout group_11">
+                    <div class="column-layout group_12">
+                      <div class="row-layout group_13">
+                        <igx-chip class="chip">
+                          <igx-prefix>
+                            <igx-icon class="icon_1">
+                              drag_indicator
+                            </igx-icon>
+                          </igx-prefix>
+                          <igx-suffix>
+                            <igx-icon class="icon_2">
+                              remove_circle
+                            </igx-icon>
+                          </igx-suffix>
+                          Structure contains "value"
+                        </igx-chip>
+                      </div>
+                      <div class="row-layout group_14">
+                        <igx-chip class="chip">
+                          <igx-prefix>
+                            <igx-icon class="icon_1">
+                              drag_indicator
+                            </igx-icon>
+                          </igx-prefix>
+                          <igx-suffix>
+                            <igx-icon class="icon_2">
+                              remove_circle
+                            </igx-icon>
+                          </igx-suffix>
+                          field greater than equal to "400"
+                        </igx-chip>
+                      </div>
+                    </div>
+                    <div class="column-layout conditions_group">
+                      <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_3">
+                        <span>Or</span>
+                        <igx-icon class="icon_3">
+                          keyboard_arrow_down
+                        </igx-icon>
+                      </button>
+                      <div class="column-layout group_11">
+                        <div class="row-layout group_13">
+                          <igx-chip class="chip">
+                            <igx-prefix>
+                              <igx-icon class="icon_1">
+                                drag_indicator
+                              </igx-icon>
+                            </igx-prefix>
+                            <igx-suffix>
+                              <igx-icon class="icon_2">
+                                remove_circle
+                              </igx-icon>
+                            </igx-suffix>
+                            Structure contains "value"
+                          </igx-chip>
+                        </div>
+                        <div class="row-layout group_14">
+                          <igx-chip class="chip">
+                            <igx-prefix>
+                              <igx-icon class="icon_1">
+                                drag_indicator
+                              </igx-icon>
+                            </igx-prefix>
+                            <igx-suffix>
+                              <igx-icon class="icon_2">
+                                remove_circle
+                              </igx-icon>
+                            </igx-suffix>
+                            field greater than equal to "400"
+                          </igx-chip>
+                        </div>
+                      </div>
+                      <igx-drop-down #dropdown1 class="dropdown">
+                        <igx-drop-down-item>
+                          Switch to AND group
+                        </igx-drop-down-item>
+                        <igx-drop-down-item>
+                          Ungroup
+                        </igx-drop-down-item>
+                      </igx-drop-down>
+                    </div>
+                    <div class="row-layout group_2">
+                      <button igxButton="flat" type="button" igxRipple routerLink="/a-and-new-condition" class="button_4">
+                        + condition
+                      </button>
+                      <button igxButton="flat" type="button" igxRipple class="button_4">
+                        + group
+                      </button>
+                    </div>
+                  </div>
+                  <igx-drop-down #dropdown class="dropdown">
+                    <igx-drop-down-item>
+                      Switch to OR group
+                    </igx-drop-down-item>
+                    <igx-drop-down-item [disabled]="true">
+                      Ungroup
+                    </igx-drop-down-item>
+                  </igx-drop-down>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-layout group_15">
+            <igx-chip class="chip">
+              <igx-prefix>
+                <igx-icon class="icon_1">
+                  drag_indicator
+                </igx-icon>
+              </igx-prefix>
+              <igx-suffix>
+                <igx-icon class="icon_2">
+                  remove_circle
+                </igx-icon>
+              </igx-suffix>
+              Structure contains "value"
+            </igx-chip>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout group_16">
+    <button igxButton="flat" type="button" igxRipple class="button_5">
+      Delete all
+    </button>
+    <div class="row-layout group_5">
+      <button igxButton="outlined" type="button" igxRipple class="button_5">
+        Cancel
+      </button>
+      <button igxButton="contained" type="button" igxRipple class="button_5">
+        Apply
+      </button>
+    </div>
+  </div>
+</div>

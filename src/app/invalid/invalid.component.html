@@ -1,0 +1,95 @@
+<div class="column-layout group">
+  <h6 class="h6">
+    Edit Query
+  </h6>
+  <div class="column-layout group_1">
+    <div class="row-layout group_2">
+      <div class="column-layout group_3">
+        <p class="ig-typography__body-2 text">
+          From
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Compounds
+          </igx-select-item>
+        </igx-select>
+      </div>
+      <div class="column-layout group_3">
+        <p class="ig-typography__body-2 text">
+          Select
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Id, Structure, Date
+          </igx-select-item>
+        </igx-select>
+      </div>
+    </div>
+    <div class="column-layout group_4">
+      <p class="ig-typography__body-2 text">
+        Where
+      </p>
+      <div class="row-layout group_5">
+        <div class="row-layout group_4">
+          <igx-select type="box" placeholder="Column" class="user-input">
+            <igx-select-item value="1">
+              Id
+            </igx-select-item>
+          </igx-select>
+          <igx-select type="box" placeholder="equals" class="select_2">
+            <igx-select-item value="1">
+              in
+            </igx-select-item>
+          </igx-select>
+          <igx-input-group type="box" class="user-input">
+            <input type="text" placeholder="value" igxInput />
+          </igx-input-group>
+          <igx-icon class="icon">
+            error
+          </igx-icon>
+          <igx-icon class="icon_1">
+            error
+          </igx-icon>
+        </div>
+        <div class="row-layout group_6">
+          <button igxButton="outlined" [disabled]="true" type="button" igxRipple class="button">
+            <igx-icon>
+              check
+            </igx-icon>
+          </button>
+          <button igxButton="outlined" type="button" igxRipple class="button">
+            <igx-icon>
+              close
+            </igx-icon>
+          </button>
+        </div>
+      </div>
+      @if (groupVisible) {
+        <div class="row-layout group_2">
+          <button igxButton="outlined" type="button" igxRipple class="button_1">
+            + condition
+          </button>
+          <button igxButton="outlined" type="button" igxRipple class="button_1">
+            + group
+          </button>
+        </div>
+      }
+    </div>
+  </div>
+  <div class="row-layout group_7">
+    <button igxButton="flat" type="button" igxRipple class="button_2">
+      Delete all
+    </button>
+    <div class="row-layout group_8">
+      <p class="ig-typography__body-2 text_1">
+        1 condition is incomplete!
+      </p>
+      <button igxButton="outlined" type="button" igxRipple class="button_2">
+        Cancel
+      </button>
+      <button igxButton="contained" type="button" igxRipple class="button_2">
+        Apply
+      </button>
+    </div>
+  </div>
+</div>

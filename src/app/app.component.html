@@ -1,0 +1,46 @@
+<igx-nav-drawer [isOpen]="true" [pin]="true" width="238px" class="nav-drawer">
+  <ng-template igxDrawer>
+    <div [isHeader]="true" igxDrawerItem igxRipple>
+      <span>Expressions</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/add-a">
+      <span>Empty</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a">
+      <span>(A)</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-and-new-condition">
+      <span>(A and new condition)</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-and-b">
+      <span>(A and B)</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-and-b-and-new-group">
+      <span>(A and B and new group)</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-and-b-and-c">
+      <span>(A and B and (C))</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-and-b-and-chover">
+      <span>(A and B and (C+hover))</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-and-b-and-c-or-d">
+      <span>((A and B and (C or D))</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/a-or-b-and-c-or-d-or-drop">
+      <span>((A or B) and  (C or D or drop))</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/subquery-a-and-b-and-c-or-d-and-e">
+      <span>Subquery expanded</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/subquery-collapsed">
+      <span>Subquery collapsed</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/invalid">
+      <span>invalid condition</span>
+    </div>
+  </ng-template>
+</igx-nav-drawer>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
